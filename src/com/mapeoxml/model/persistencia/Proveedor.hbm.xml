@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="venta" name="com.mapeoxml.model.persistencia.Proveedor" optimistic-lock="version" table="proveedor">
+    <id name="id_proveedor" type="java.lang.Integer">
+      <column name="id_proveedor"/>
+      <generator class="identity"/>
+    </id>
+    <property name="descripcion" type="string">
+      <column length="100" name="descripcion" not-null="true"/>
+    </property>
+    
+  </class>
+</hibernate-mapping>
